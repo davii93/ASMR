@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <style type="text/css">
+    	.thum{ height: 100px; opacity: 0.3px }
+    	.thum:hover{opacity: 1;}
+    	.wrap-img{display: inline-block; text-align: center;}
+    	body{background-repeat: no-repeat; background-size: cover; text-align: center; background-image: url(war.jpg);}
+    </style>
+</head>
+<body>
+	<h1>나의 일주일 기분들</h1>
+	<div class="wrap-img">
+		<h3>월</h3>
+		<img src="월.jpg" class="thum" id="a">
+	</div>
+	<div class="wrap-img">
+		<h3>화</h3>
+		<img src="화.jpg" class="thum" id="b">
+	</div>
+	<div class="wrap-img">
+		<h3>수</h3>
+		<img src="수.jpg" class="thum" id="c">
+	</div>
+	<div class="wrap-img">
+		<h3>목</h3>
+		<img src="목.jpg" class="thum" id="d">
+	</div>
+	<div class="wrap-img">
+		<h3>금</h3>
+		<img src="금.jpg" class="thum" id="e">
+	</div>
+	<div class="wrap-img">
+		<h3>토</h3>
+		<img src="토.png" class="thum" id="f">
+	</div>
+	<div class="wrap-img">
+		<h3>일</h3>
+		<img src="일.jpg" class="thum" id="g">
+	</div>
+	<audio src="월.mp3" id="aa" loop></audio>
+	<audio src="화.wav" id="bb" loop></audio>
+	<audio src="수.mp3" id="cc" loop></audio>
+	<audio src="목.wav" id="dd" loop></audio>
+	<audio src="금.m4a" id="ee" loop></audio>
+	<audio src="토.wav" id="ff" loop></audio>
+	<audio src="일.wav" id="gg" loop></audio>
+	<script type="text/javascript">
+		astate = "off";
+		a.onclick = function(){
+			if(astate == "off"){
+				aa.play(); astate="on";
+				a.style.opacity ="1"
+				document.body.style.backgroundImage = "url(월.jpg)";
+			}
+			else{aa.pause(); astate="off";
+			    a.style.opacity ="0.3";
+			    document.body.style.backgroundImage = "none";
+		    }
+		}
+		var bstate = "off";
+		b.onclick = function(){
+			if(bstate =="off"){
+				bb.play(); bstate = "on";
+				b.style.opacity ="1";
+				document.body.style.backgroundImage = "url(화.jpg)";
+			}else{
+				bb.pause(); bstate ="off";
+				b.style.opacity="0.3";
+				document.body.style.backgroundImage = "none";
+			}
+		}
+		var cstate = "off";
+		c.onclick = function(){
+			if(cstate =="off"){
+				cc.play(); cstate = "on";
+				c.style.opacity ="1";
+				document.body.style.backgroundImage = "url(수배경.jpg)";
+			}else{
+				cc.pause(); cstate ="off";
+				c.style.opacity="0.3";
+				document.body.style.backgroundImage = "none";
+			}
+		}
+		var dstate = "off";
+		d.onclick = function(){
+			if(dstate =="off"){
+				dd.play(); dstate = "on";
+				d.style.opacity ="1";
+				document.body.style.backgroundImage = "url(목.jpg)";
+			}else{
+				dd.pause(); dstate ="off";
+				d.style.opacity="0.3";
+			    document.body.style.backgroundImage = "none";
+			}
+		}
+		var estate = "off";
+		e.onclick = function(){
+			if(estate =="off"){
+				ee.play(); estate = "on";
+				e.style.opacity ="1";
+				document.body.style.backgroundImage = "url(금배경.png)";
+			}else{
+				ee.pause(); estate ="off";
+				e.style.opacity="0.3";
+				document.body.style.backgroundImage = "none";
+			}
+		}
+		var fstate = "off";
+		f.onclick = function(){
+			if(fstate =="off"){
+				ff.play(); fstate = "on";
+				f.style.opacity ="1";
+				document.body.style.backgroundImage = "url(토배경.jpg)";
+			}else{
+				ff.pause(); fstate ="off";
+				f.style.opacity="0.3";
+				document.body.style.backgroundImage = "none";
+			}
+		}
+		var gstate = "off";
+		g.onclick = function(){
+			if(gstate =="off"){
+				gg.play(); gstate = "on";
+				g.style.opacity ="1";
+				document.body.style.backgroundImage = "url(일배경.jpg)";
+			}else{
+				gg.pause(); gstate ="off";
+				g.style.opacity="0.3";
+				document.body.style.backgroundImage = "none";
+			}
+		}
+
+	</script>
+
+</body>
+</html>
